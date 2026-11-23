@@ -5,6 +5,6 @@ class Solution(object):
             if nums[s]!=nums[s2]:
                 s+=1
 
-                nums[s]=nums[s2]
+                nums[s],nums[s2]=nums[s2],nums[s]
         return s+1
         
