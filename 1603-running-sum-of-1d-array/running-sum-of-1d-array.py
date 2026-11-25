@@ -1,9 +1,5 @@
 class Solution(object):
     def runningSum(self, nums):
-        p=[]
-        s=0
-        for i in nums:
-            s+=i
-            p.append(s)
-        return p
-        
+        for i in range(1,len(nums)):
+            nums[i] += nums[i-1]
+        return nums
