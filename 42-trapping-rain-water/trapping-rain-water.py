@@ -6,7 +6,7 @@ class Solution(object):
         while le<ri:
             if l[le]<l[ri]:
                 if l[le]>lm:
-                    lm=l[le]
+                    lm=l[le]           
                 tw+=(lm-l[le])
                 le+=1
             else:
@@ -14,7 +14,7 @@ class Solution(object):
                     rm=l[ri]
                 tw+=(rm-l[ri])
                 ri-=1
-        return tw                
+        return tw
 
         
         
